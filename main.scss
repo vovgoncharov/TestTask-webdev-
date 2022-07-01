@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    list-style: none;
+    margin-left: 80px;
+}
+
+.logo {
+    padding: 25px;
+    cursor: pointer;
+}
+
+.logo-img {
+    animation: anim 3s infinite linear;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.item-two {
+    margin-left: 0;
+}
+
+.item-one {
+    margin-right: 80px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    opacity: 0.8;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.main {
+    background: url(assets/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 224px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 140%;
+    color: #fff;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 47px;
+    background: #00AFDB;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-item {
+    margin: 0 20px;
+    list-style: none;
+}
+
+.menu-social {
+    display: flex;
+    justify-content: center;
+    padding: 280px 0 90px 0;
+}
+
+.about-block {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-block {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #373737;
+}
+
+.text-block {
+    padding: 20px 30px;
+    font-size: 14px;
+    line-height: 140%;
+    color: #4E4E4E;
+    text-align: center;
+}
+
+.text-span {
+    font-weight: 700;
+}
+
+.right-block {
+    margin-left: 50px;
+}
+
+.contacts {
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        padding: 160px 0 80px;
+        font-family: Merriweather;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+        color: #fff
+    }
+
+}
+
+#textarea {
+    resize: none;
+}
+
+#textarea,
+.email,
+.tel {
+    width: 450px;
+    display: block;
+    padding: 5px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 2px solid #00AFDB;
+}
+
+#textarea::placeholder {
+    font-family: inherit;
+    color: #fff;
+    font-size: 20px;
+    font-family: inherit;
+    font-size: 20px;
+    font-family: Inter;
+    line-height: 40px;
+}
+
+.email::placeholder {
+    font-family: inherit;
+    color: #fff;
+    font-size: 20px;
+    font-family: Inter;
+    line-height: 40px;
+}
+
+.tel::placeholder {
+    font-family: inherit;
+    font-size: 20px;
+    font-family: inherit;
+    color: #fff;
+    font-size: 20px;
+    font-family: Inter;
+    line-height: 40px;
+}
+
+.tel:focus,
+.email:focus,
+#textarea:focus {
+    color: #fff;
+}
+
+.tel {
+    margin: 20px 0;
+}
+
+.contact-btn {
+    padding: 51.5px 0;
+}
+
+.phone,
+.address {
+    color: #fff;
+    padding: 20px 0;
+}
+
+.main-our {
+    background-color: #C4C4C4;
+}
+
+.our {
+    height: 89.3vh;
+}
+
+.our-block {
+    // width: inherit;
+}
+
+.community {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+.block-photo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wraps {
+    width: 1000;
+}
+
+.adaptive {
+    display: none;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.text-footer {
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+@import 'adaptive';
